@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Researcher</title>
+    <style>
+        /* THE "RESEARCHER" CSS THEME */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #111111;
+            --link-color: #0000EE; /* Classic HTML Blue */
+            --accent-color: #666;
+            --font-main: "Georgia", "Times New Roman", serif; /* Academic vibe */
+            --font-mono: "Menlo", "Consolas", monospace; /* Code vibe */
+        }
+
+        body {
+            font-family: var(--font-main);
+            line-height: 1.6;
+            color: var(--text-color);
+            background: var(--bg-color);
+            max-width: 700px;
+            margin: 4rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            font-weight: normal;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        h1 { font-size: 2rem; border-bottom: 1px solid #eee; padding-bottom: 0.5rem; }
+        h2 { font-size: 1.2rem; font-weight: bold; }
+        
+        p { margin-bottom: 1.5rem; }
+
+        a { color: var(--link-color); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* Lists */
+        ul { padding-left: 1.2rem; margin-bottom: 2rem; }
+        li { margin-bottom: 0.5rem; }
+
+        /* The "Date" next to items */
+        .date {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            margin-right: 0.8rem;
+            display: inline-block;
+            min-width: 80px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #eee;
+            font-size: 0.9rem;
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Your Name</h1>
+        <p>
+            I am an AI researcher and tinkerer. Currently working on 
+            <a href="#">Project X</a>. Previously at [Company/Uni]. 
+            I am interested in LLMs, computer vision, and cognitive science.
+        </p>
+        <p>
+            <a href="mailto:email@example.com">Email</a> / 
+            <a href="#">Twitter</a> / 
+            <a href="#">GitHub</a>
+        </p>
+    </header>
+
+    <section>
+        <h2>Selected Experiments</h2>
+        <ul>
+            <li>
+                <span class="date">2024</span>
+                <a href="#">Neural Network Visualizer</a> – A tool to see weights update in real-time.
+            </li>
+            <li>
+                <span class="date">2023</span>
+                <a href="#">Tiny-Llama</a> – Fine-tuning a small model on my own journal entries.
+            </li>
+            <li>
+                <span class="date">2023</span>
+                <a href="#">Chaos Game</a> – Generating fractals with simple python scripts.
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Writing</h2>
+        <ul>
+            <li>
+                <span class="date">Oct 2024</span>
+                <a href="#">Why scaling laws might hit a wall</a>
+            </li>
+            <li>
+                <span class="date">Aug 2024</span>
+                <a href="#">Notes on "The Bitter Lesson"</a>
+            </li>
+            <li>
+                <span class="date">Jan 2024</span>
+                <a href="#">Setting up a local inference server</a>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Last updated: December 2025</p>
+    </footer>
+
+</body>
+</html>
