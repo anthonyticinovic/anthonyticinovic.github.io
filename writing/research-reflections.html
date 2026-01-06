@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="robots" content="noindex, nofollow">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Reflections | Mech Interp</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #222222;
+            --link-color: #0044cc;
+            --accent-color: #777;
+            --font-main: "Georgia", "Times New Roman", serif;
+            --font-mono: "Menlo", "Consolas", monospace;
+        }
+
+        body {
+            font-family: var(--font-main);
+            line-height: 1.65;
+            color: var(--text-color);
+            background: var(--bg-color);
+            max-width: 680px;
+            margin: 4rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Typography */
+        h1 { 
+            font-size: 1.8rem; 
+            font-weight: normal; 
+            border-bottom: 2px solid #111; 
+            padding-bottom: 0.5rem; 
+            margin-bottom: 2rem;
+        }
+        
+        h2 { 
+            font-size: 1.1rem; 
+            font-weight: bold; 
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        p { margin-bottom: 1.5rem; }
+
+        a { 
+            color: var(--link-color); 
+            text-decoration: underline; 
+            text-decoration-thickness: 1px;
+            text-underline-offset: 3px;
+        }
+        a:hover { background-color: #f0f0f0; }
+
+        .meta {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--accent-color);
+            margin-top: -1.5rem;
+            margin-bottom: 2rem;
+            display: block;
+        }
+
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #eee;
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Reflections on Mechanistic Interpretability Research</h1>
+        <span class="meta">December 2025</span>
+    </header>
+
+    <article>
+        <p>
+            After completing a recent research stint in Mechanistic Interpretability (MI), I found myself asking a difficult question about my findings: "So what?"
+        </p>
+        <p>
+            There is a distinct, intellectual satistafaction in this field. It is deeply satisfying to pull a thread of clarity from what, at times, appears to be nonsensical features, representations, and circuits. However, I argue that MI research often lacks a tangible impact beyond the paper it is published in.
+        </p>
+
+        <h2>Cautioning One-Off Knowledge Pursuit</h2>
+        <p>
+            Knowledge for the sake of discovery has historically been a valid cause. But MI is uniquely vulnerable to misdirected effort because <strong>our subject of study has an expiry date</strong>. Unlike biology or physics, where the cell and the atom remain constant, AI models are deprecated in months. While certain architectural motifs may transfer, specific semantic circuits often do not. Even small training updates to the same models can meaningfully change model internals. Spending six months reverse-engineering a circuit in a model that will soon be obsolete is almost always a poor time investment. That is unless the insights gained can be robustly and consistently applied to future models.
+        </p>
+
+        <h2>Engineering over Observation</h2>
+        <p>
+            The opportunity cost of any AI research is particularly high. The field is flooded with "interesting experiments" that describe model behavior but fail to change or fix it.
+        </p>
+        <p>
+            If I were to pursue further research in this domain, I would reject purely descriptive work. I propose an <strong>outcome-biased approach</strong> to interpretability:
+        </p>
+        <ul>
+            <li><strong>Steering model behaviours:</strong> Don't just find the "Golden Gate Bridge" feature. <a href = "https://www.anthropic.com/news/golden-gate-claude" target="_blank"> Build the clamp </a> that allows us to amplify it. <a href="https://arxiv.org/abs/2310.01405" target="_blank" rel="noopener noreferrer">Representation Engineering</a> is an amazingly interpretable subfield of MI.
+            <li><strong>Tooling dependencies:</strong> Build evals that <em>require</em> MI to function.</li>
+        </ul>
+        <p>
+            We need fewer microscopes and more robust tools.
+        </p>
+    </article>
+
+    <footer>
+        <p>
+            <a href="mailto:aticinov@outlook.com">Email</a> / 
+            <a href="#">GitHub</a>
+        </p>
+    </footer>
+
+</body>
+</html>
